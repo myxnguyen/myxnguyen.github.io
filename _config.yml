@@ -1,4 +1,9 @@
-title: "My Personal Website"
-author: My
-description: "International Economics Researcher"
-theme: jekyll-theme-cayman  
+# Name of website
+title: My Nguyen
+
+# Your name to show in the footer
+author: My Nguyen
+
+description: International Economics Researcher
+
+theme: jekyll-theme-slate 
