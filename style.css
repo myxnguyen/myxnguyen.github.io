@@ -50,7 +50,7 @@ html {
 
 /* Active navigation link styling - this needs to be applied manually per page */
 .nav-link.active {
-    background-color: #2563eb; /* bg-blue-600 */
+    background-color: #2563eb; /* bg-teal-600 */
     color: #ffffff; /* text-white */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
 }
