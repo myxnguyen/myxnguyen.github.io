@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome - My</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a4d5bb5f14.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Nguyen</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="flex flex-col items-center p-4 sm:p-6 lg:p-8">
 
-  <div class="nav">
-    <a href="research.md">Research</a>
-    <a href="cv.md">CV</a>
-    <a href="notes.md">Notes</a>
-  </div>
+    <!-- Header with Navigation Bar -->
+    <header class="w-full max-w-4xl bg-white shadow-lg rounded-xl mb-6 p-4">
+        <nav class="flex flex-wrap justify-center sm:justify-start gap-3 sm:gap-6">
+            <!-- "About Me" is now the active link for the index page -->
+            <a href="index.html" class="nav-link active">About Me</a>
+            <a href="research.html" class="nav-link">Research</a>
+            <a href="cv.html" class="nav-link">CV</a>
+            <a href="notes.html" class="nav-link">Notes</a>
+        </nav>
+    </header>
 
-  <div class="container">
-    <div class="image-box">
-      <img src="assets/myphoto.jpg" alt="My Photo">
-      <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> <a href="mailto:my.email@example.com">tnguyen39@uni-bielefeld.de</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/myprofile" target="_blank">linkedin.com/in/myxnguyen</a></p>
-        <p><i class="fas fa-map-marker-alt"></i> Bielefeld, Germany</p>
-      </div>
-    </div>
+    <!-- Main Content Area for About Me (now the Index) Page -->
+    <main class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-6 sm:p-8 lg:p-10 mb-6 fade-in-section">
+        <section id="about">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-teal-500">About Me</h2>
+            <img
+                src="assets/myphoto.jpg"
+                alt="My Photo"
+                class="rounded-full mx-auto mb-6 shadow-md border-4 border-teal-200"
+                onerror="this.onerror=null;this.src='https://placehold.co/150x150/B2DFDB/00796B?text=Error+Loading';"
+            />
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Hello! I'm My, a passionate International Economics with a keen interest in empirical research.
+                I'm a doctoral student at Bielefeld University and have since been exploring the combination of international economics and data science.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                My work primarily focuses on international trade, international macroeconomics, trade policy, and global finance.
+                I am fond of econometric methods and cutting-edge techniques such as machine learning and natural language processing, 
+                which I actively incorporate into my current research.
+              
+                This website serves as a space to share my professional journey, research, and notes on various topics.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                Outside of my professional life, I enjoy doing sports, playing badminton and guitar, and (of course) enjoying delicious foods.
+                Feel free to explore my research, CV, and notes, and don't hesitate to connect!
+            </p>
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold text-gray-700 mb-3">Connect with me:</h3>
+                <div class="flex justify-center space-x-4">
+                    <!-- Replace with your actual social media links -->
+                    <a href="https://linkedin.com/in/myxnguyen" target="_blank" rel="noopener noreferrer"
+                       class="text-teal-600 hover:text-teal-800 transition-colors duration-200 flex items-center gap-1">
+                        <i class="fab fa-linkedin text-2xl"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/myxnguyen" target="_blank" rel="noopener noreferrer"
+                       class="text-gray-800 hover:text-black transition-colors duration-200 flex items-center gap-1">
+                        <i class="fab fa-github text-2xl"></i> GitHub
+                    </a>
+                    <a href="mailto:tnguyen39@uni-bielefeld.de"
+                       class="text-red-600 hover:text-red-800 transition-colors duration-200 flex items-center gap-1">
+                        <i class="fas fa-envelope text-2xl"></i> Email
+                    </a>
+              </div>
+            </div>
+        </section>
+    </main>
 
-    <div class="text-box">
-      <h1>Hello! I'm My</h1>
-      <p>I’m a doctoral student in International Economics at Bielefeld University. My research studies the intersection of international economics and data science, with a particular focus on international trade, macroeconomics, trade policy, multinational acquisitions, and global finance. I'm also passionate about econometric methods and cutting-edge techniques such as machine learning and natural language processing, which I actively incorporate into my current and future research.</p>
-      <p>Welcome to my personal website. Explore my research, view my CV, or read my notes on economic analyses.</p>
-    </div>
-  </div>
+    <!-- Footer -->
+    <footer class="w-full max-w-4xl text-center text-gray-600 text-sm mt-8 p-4">
+        <p>&copy; 2025 My Nguyen. All rights reserved.</p>
+       /* <p>Built with HTML, CSS, and GitHub Pages.</p> */
+    </footer>
 
 </body>
 </html>
-
-
-
