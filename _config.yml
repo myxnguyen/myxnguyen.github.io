@@ -1,9 +1,4 @@
-# Name of website
 title: My Nguyen
-
-# Your name to show in the footer
+description: A personal website showcasing my work, research, and notes.
 author: My Nguyen
-
-description: International Economics Researcher
-
-theme: jekyll-theme-slate 
+email: tnguyen39@uni-bielefeld.de
