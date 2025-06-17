@@ -1,8 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
   margin: 0;
   padding: 40px;
-  background-color: #fefefe;
+  background-color: #f9f9f9;
 }
 
 .nav {
@@ -16,14 +16,12 @@ body {
   text-decoration: none;
   color: #0366d6;
   font-weight: bold;
-  font-size: 16px;
 }
 
 .container {
   display: flex;
   align-items: flex-start;
   margin-top: 100px;
-  justify-content: center;
   gap: 40px;
 }
 
@@ -49,8 +47,6 @@ body {
 .contact-info i {
   margin-right: 8px;
   color: #0366d6;
-  width: 20px;
-  text-align: center;
 }
 
 .contact-info a {
@@ -64,4 +60,5 @@ body {
 
 .text-box {
   max-width: 500px;
+  text-align: center;
 }
