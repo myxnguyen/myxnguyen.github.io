@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col items-center p-4 sm:p-6 lg:p-8">
+
+    <!-- Header with Navigation Bar -->
+    <header class="w-full max-w-4xl bg-white shadow-lg rounded-xl mb-6 p-4">
+        <nav class="flex flex-wrap justify-center sm:justify-start gap-3 sm:gap-6">
+            <a href="index.html" class="nav-link">About Me</a>
+            <a href="research.html" class="nav-link">Research</a>
+            <a href="cv.html" class="nav-link">CV</a>
+            <a href="notes.html" class="nav-link active">Notes</a>
+        </nav>
+    </header>
+
+      <!-- Main Content Area for Notes Page -->
+    <main class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-6 sm:p-8 lg:p-10 mb-6 fade-in-section">
+        <section id="notes">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-teal-500">Notes & Blog</h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+            Here are some personal notes, insights from my interested courses as well as other self-collected sources and sample codes for economic analyses.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Note 1 -->
+                <div class="bg-teal-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-teal-800 mb-2">Reflections on Learning React Hooks</h3>
+                    <p class="text-gray-700 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-1"></i> Published: May 15, 2024 | <i class="far fa-clock mr-1"></i> 5 min read
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        A deep dive into `useState` and `useEffect`, and how they've transformed my component logic.
+                        Understanding dependencies is key!
+                    </p>
+                    <a href="#" class="text-teal-600 hover:underline mt-3 inline-block">Read More</a>
+                </div>
+
+                <!-- Note 2 -->
+                <div class="bg-teal-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-teal-800 mb-2">My Favorite Productivity Tools for Researchers</h3>
+                    <p class="text-gray-700 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-1"></i> Published: April 28, 2024 | <i class="far fa-clock mr-1"></i> 7 min read
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        From reference managers to task organizers, here's a list of tools that boost my daily workflow.
+                    </p>
+                    <a href="#" class="text-teal-600 hover:underline mt-3 inline-block">Read More</a>
+                </div>
+
+                              <!-- Note 3 -->
+                <div class="bg-teal-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-teal-800 mb-2">Introduction to Quantum Machine Learning</h3>
+                    <p class="text-gray-700 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-1"></i> Published: March 10, 2024 | <i class="far fa-clock mr-1"></i> 10 min read
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        A beginner-friendly overview of how quantum principles can be applied to machine learning algorithms.
+                    </p>
+                    <a href="#" class="text-teal-600 hover:underline mt-3 inline-block">Read More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-4xl text-center text-gray-600 text-sm mt-8 p-4">
+        <p>&copy; 2025 My Nguyen. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
