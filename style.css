@@ -1,20 +1,60 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 40px;
-  line-height: 1.6;
+  margin: 0;
+  padding: 40px;
+  background-color: #fefefe;
 }
 
-nav {
-  margin-bottom: 20px;
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 40px;
 }
 
-nav a {
+.nav a {
+  margin-left: 20px;
   text-decoration: none;
-  margin-right: 15px;
+  color: #0366d6;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-right: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-box {
+  max-width: 500px;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.contact-info i {
+  margin-right: 8px;
   color: #0366d6;
 }
 
-img {
-  border-radius: 8px;
-  margin-top: 10px;
+.contact-info a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
 }
