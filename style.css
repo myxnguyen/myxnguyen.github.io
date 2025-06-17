@@ -21,9 +21,14 @@ body {
 
 .container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 100px;
   justify-content: center;
+  gap: 40px;
+}
+
+.image-box {
+  text-align: center;
 }
 
 .image-box img {
@@ -31,23 +36,21 @@ body {
   height: 200px;
   border-radius: 100px;
   object-fit: cover;
-  margin-right: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.text-box {
-  max-width: 500px;
 }
 
 .contact-info {
   margin-top: 20px;
   font-size: 14px;
   color: #444;
+  text-align: left;
 }
 
 .contact-info i {
   margin-right: 8px;
   color: #0366d6;
+  width: 20px;
+  text-align: center;
 }
 
 .contact-info a {
@@ -57,4 +60,8 @@ body {
 
 .contact-info a:hover {
   text-decoration: underline;
+}
+
+.text-box {
+  max-width: 500px;
 }
