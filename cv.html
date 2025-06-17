@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col items-center p-4 sm:p-6 lg:p-8">
+
+    <!-- Header with Navigation Bar -->
+    <header class="w-full max-w-4xl bg-white shadow-lg rounded-xl mb-6 p-4">
+        <nav class="flex flex-wrap justify-center sm:justify-start gap-3 sm:gap-6">
+            <a href="index.html" class="nav-link">About Me</a>
+            <a href="research.html" class="nav-link">Research</a>
+            <a href="cv.html" class="nav-link active">CV</a>
+            <a href="notes.html" class="nav-link">Notes</a>
+        </nav>
+    </header>
+  
+   <!-- Main Content Area for CV Page -->
+    <main class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-6 sm:p-8 lg:p-10 mb-6 fade-in-section">
+        <section id="cv">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-teal-500">Curriculum Vitae (CV)</h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                Below is a summary of my professional experience, education, and skills. For a complete version, please download my CV.
+            </p>
+            <a href="assets/mycv.pdf" target="_blank" rel="noopener noreferrer"
+               class="inline-block bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700
+                      transition-colors duration-200 text-lg font-semibold mb-8">
+                Download Full CV <i class="fas fa-download ml-2"></i>
+            </a>
+
+            <div class="space-y-8">
+                <!-- Education -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Education</h3>
+                    <div class="mb-4 p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                        <p class="font-bold text-lg text-teal-700">Doctoral student in International Economics</p>
+                        <p class="text-gray-800">Bielefeld University, Germany</p>
+                        <p class="text-sm text-gray-600">10.2024 - present</p>
+                        <p class="text-gray-700 mt-2">Research topics: international economics</p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                        <p class="font-bold text-lg text-teal-700">M.Sc. in Economic Policy</p>
+                        <p class="text-gray-800">University of Siegen, Germany</p>
+                        <p class="text-sm text-gray-600">10.2019 – 02.2022</p>
+                    </div>
+                        <div class="p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                        <p class="font-bold text-lg text-teal-700">B.A. in International Economics</p>
+                        <p class="text-gray-800">Diplomatic Academy of Vietnam</p>
+                        <p class="text-sm text-gray-600">09.2014 – 06.2018</p>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Experience</h3>
+                    <div class="mb-4 p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                        <p class="font-bold text-lg text-teal-700">Research Assistant</p>
+                        <p class="text-gray-800">Bielefeld University</p>
+                        <p class="text-sm text-gray-600">10.2024 – present</p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                        <p class="font-bold text-lg text-teal-700">Research Assistant</p>
+                        <p class="text-sm text-gray-600">University of Siegen</p>
+                        <p class="text-sm text-gray-600">09.2022 – 06.2024</p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                        <p class="font-bold text-lg text-teal-700">Administrative Assistant (for Lecturer Van Khanh Le)</p>
+                        <p class="text-sm text-gray-600">Diplomatic Academy of Vietnam</p>
+                        <p class="text-sm text-gray-600">09.2018 – 08.2019</p>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                        <span class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">R</span>
+                        <span class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">Stata</span>
+                        <span class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">LaTeX</span>
+                        <span class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">Data Analysis</span>
+                        <span class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">Machine Learning</span>
+                        <span class="bg-teal-200 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">Web-scraping</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </main>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-4xl text-center text-gray-600 text-sm mt-8 p-4">
+        <p>&copy; 2025 My Nguyen. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
