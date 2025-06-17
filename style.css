@@ -1,5 +1,4 @@
 :root {
-  /* config file CSS variables */
   --page-col: {{ site.page-col | default: "#FFFFFF" }};
   --text-col: {{ site.text-col | default: "#404040" }};
   --link-col: {{ site.link-col | default: "#008AFF" }};
@@ -12,68 +11,62 @@
   --footer-link-col: {{ site.footer-link-col | default: "#404040" }};
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
 
-  /* common CSS variables */
   --body-font: 'Lora', 'Times New Roman', serif;
   --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mid-col: #808080;
 }
 
-/* --- General --- */
+/* --- Base Styling --- */
 
 html {
-  font-size: 80%
+  font-size: 80%;
 }
+
 body {
   font-family: var(--body-font);
   font-size: 1.125rem;
   color: var(--text-col);
-  position: relative;
   background-color: var(--page-col);
   {% if site.page-img %}
   background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
   {% endif %}
   overflow-wrap: break-word;
+  margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;     /* vertically center */
-  justify-content: center; /* horizontally center */
 }
-body > main {
-  flex: 1;
-}
+
+/* --- Typography --- */
+
 p {
   line-height: 1.5;
   margin: 1.875rem 0;
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--header-font);
   font-weight: 800;
   line-height: 1.1;
-}
-h1 {
-  font-size: 2.25rem;
-}
-h2 {
-  font-size: 1.875rem;
-}
-h3 {
-  font-size: 1.5rem;
-}
-h4 {
-  font-size: 1.125rem;
-}
-h1, h2, h3, h4 {
   margin-top: 1.25rem;
 }
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.875rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.125rem; }
+
 a {
   color: var(--link-col);
+  text-decoration: none;
 }
-a:hover,
-a:focus {
+
+a:hover, a:focus {
   color: var(--hover-col);
 }
+
+/* --- Blockquote --- */
 blockquote {
   color: var(--mid-col);
   font-style: italic;
@@ -81,6 +74,8 @@ blockquote {
 blockquote p:first-child {
   margin-top: 0;
 }
+
+/* --- Utility --- */
 .jumbotron {
   background: #EEE;
 }
@@ -92,68 +87,11 @@ hr.small {
   border-radius: 0.1875rem;
 }
 
-.nav {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-}
+/* --- Header & Footer --- */
 
-.nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #0366d6;
-  font-weight: bold;
-}
-
-.container {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 100px;
-  gap: 40px;
-}
-
-.image-box {
-  text-align: center;
-}
-
-.image-box img {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #444;
-  text-align: left;
-}
-
-.contact-info i {
-  margin-right: 8px;
-  color: #0366d6;
-}
-
-.contact-info a {
-  color: #0366d6;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-.text-box {
-  max-width: 500px;
-  text-align: justify;
-}
-
-/* ✅ Header & Footer */
 .site-header,
 .site-footer {
-  background-color: #d0f0f0; /* light teal */
+  background: linear-gradient(to bottom, #c6eeee, #dff6f6); /* shaded light teal */
   padding: 20px 40px;
   text-align: center;
 }
@@ -167,25 +105,99 @@ hr.small {
 
 .site-header h2 {
   margin: 0;
-  font-size: 20px;
+  font-size: 24px;
+  color: #004d4d;
 }
 
-.site-footer p {
-  margin: 0;
-  font-size: 14px;
-  color: #555;
-}
-
-/* ✅ Adjust .nav to stay in header, not float separately */
 .nav {
-  position: static;
   margin-top: 10px;
 }
 
 .nav a {
   margin-left: 20px;
-  text-decoration: none;
-  color: #0366d6;
+  color: var(--link-col);
   font-weight: bold;
+  transition: color 0.2s;
 }
 
+.nav a:hover {
+  color: var(--hover-col);
+}
+
+.site-footer {
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--footer-text-col);
+}
+
+/* --- Main Content Layout --- */
+
+main.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* --- Image Section --- */
+
+.image-box {
+  text-align: center;
+}
+
+.image-box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Contact Info --- */
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+  text-align: left;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: var(--link-col);
+}
+
+.contact-info a {
+  color: var(--link-col);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* --- Intro Text Section --- */
+
+.text-box {
+  max-width: 500px;
+  text-align: justify;
+}
+
+.text-box h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #004d4d;
+}
+
+.text-box p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
