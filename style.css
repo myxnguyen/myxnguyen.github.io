@@ -1,8 +1,9 @@
 /* Base styles for the entire page */
 body {
-    font-family: 'Inter', sans-serif; /* Apply Inter font */
-    background-color: #f0f4f8; /* Light blue-gray background */
-    line-height: 1.6; /* Improve readability */
+      font-family: 'Georgia', 'Times New Roman', Times, serif;
+      line-height: 1.7;
+      color: #2c2c2c;
+      background: #f8f9fa;
 }
 
 /* Smooth scrolling for anchor links (if you still had them within a page) */
